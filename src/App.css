@@ -1,0 +1,139 @@
+body {
+    background-color: #eaf4f4;
+}
+
+button {
+    cursor: pointer;
+}
+
+.signup-wrap {
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register {
+    text-align: left;
+    margin: 10px;
+    padding-left: 7px;
+}
+
+.box {
+    color: #354f52;
+    background: #cce3de;
+    width: 400px;
+    border: 2px solid rgb(205, 205, 205);
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.box input::placeholder {
+    color: #6b9080;
+}
+
+.box input[type="text"],
+.box input[type="email"],
+.box input[type="password"] {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    margin: 10px;
+    border-color: rgb(196 196 196 / 47%);
+    border-radius: 6px;
+    padding: 8px;
+    width: 90%;
+    border: none;
+}
+
+.gender,
+.hobbies {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.gender input,
+.hobbies input {
+    margin-right: 7px;
+}
+
+.mr {
+    margin-right: 10px;
+}
+
+.register-btn {
+    background-color: #f6fff8;
+    color: #354f52;
+    font-weight: 600;
+    font-size: 14px;
+    margin: 7px 5px 10px 5px;
+    width: 80%;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.search,
+.sorting {
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search input {
+    width: 20%;
+}
+
+.search input,
+.search button {
+    background-color: #f6fff8;
+    border: none;
+    padding: 10px;
+}
+
+.sorting {
+    gap: 20px;
+    color: #354f52;
+}
+
+.sorting select {
+    padding: 10px;
+    font-weight: 600;
+    color: #354f52;
+}
+
+.sorting select option {
+    text-transform: uppercase;
+}
+
+table {
+    color: #354f52;
+    background: #cce3de;
+}
+
+thead {
+    font-size: 20px;
+}
+
+.actions {
+    border: none;
+    padding: 7px;
+    background-color: seashell;
+    border-radius: 4px;
+}
+
+p {
+    margin-top: 4px;
+}
+
+p a {
+    text-decoration: none;
+    padding-left: 3px;
+}
+
+.error p {
+    margin: 0px;
+    color: red;
+    text-align: left;
+    margin-left: 24px;
+}
