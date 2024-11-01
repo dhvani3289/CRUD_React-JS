@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useState } from "react";
-import './App.css'
+
 
 function App() {
   let [data, setData] = useState({});
@@ -58,9 +58,9 @@ function App() {
     if (!data.password) {
       validationMessages.password = 'Password is required';
     }
-    // else if (!data.password.match(/^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{7,15}$/)) {
-    // validationMessages.password = 'Enter a password between 7 to 15 characters which contain at least one numeric digit and a special character.'
-    // }
+    else if (!data.password.match(/^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{7,15}$/)) {
+      validationMessages.password = 'Enter a password between 7 to 15 characters which contain at least one numeric digit and a special character.'
+    }
     return validationMessages
   }
 
@@ -121,7 +121,7 @@ function App() {
     console.log(getData);
 
     if (!getData || getData.length === 0) {
-      setPage([]); // Set an empty array for page numbers if no data
+      setPage([]); // Setting an empty array for page numbers if no data is there
       return;
     }
 
@@ -144,17 +144,7 @@ function App() {
   let searchData = (e) => {
     e.preventDefault();
     setFind(e.target.search.value);
-    // const searchTerm = e.target.search.value.toLocaleLowerCase();
-    // setFind(list.filter((v) => v.username.toLocaleLowerCase().includes(searchTerm)));
   }
-  console.log(find);
-
-
-  // let searchData = (e) => {
-  //   e.preventDefault();
-  //   const searchTerm = e.target.search.value.toLocaleLowerCase();
-  //   setList(list.filter((v) => v.username.toLocaleLowerCase().includes(searchTerm)));
-  // };
 
 
   return (
